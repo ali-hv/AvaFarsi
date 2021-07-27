@@ -6,17 +6,17 @@ This program takes the name of the singer(Iranian signer) and downloads all the 
     <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/images/1.png"/></a>
 </div>
 
-<h2><Installation><h2>
+**Installation**
   
 First, make sure you have Python3 and pip installed. Then go to the program directory and run the following command in the terminall or command line:
 
-'''
+''' bash
 pip3 install requirements.txt
 '''
   
-<h2><Usage><h2>
+**Usage**
 
-'''
+''' bash
 python3 music_downloader.py
 '''
   
