@@ -1,0 +1,9 @@
+bs4
+requests
+urllib
+regex
+os
+pyfiglet
+random
+time
+platform
