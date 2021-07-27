@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import urllib.request
 import urllib
 import regex
 import os
