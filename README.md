@@ -2,8 +2,8 @@
 This program takes the name of the singer(Iranian signer) and downloads all the music of that singer
 
 <div style="text-align: center">
-    <a href="https://github.com/Ali-Hosseinverdi/Music-downloader/screenshots/1.png">
-    <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/screenshots/1.png"/></a>
+    <a href="https://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.png">
+    <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.png"/></a>
 </div>
 
 ## Installation
@@ -21,6 +21,6 @@ python3 music_downloader.py
 ```
   
 <div style="text-align: center">
-    <a href="https://github.com/Ali-Hosseinverdi/Music-downloader/screenshots/1.gif">
-    <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/screenshots/1.gif"/></a>
+    <a href="hhttps://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.gif">
+    <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.gif"/></a>
 </div>
