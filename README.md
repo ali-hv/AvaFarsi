@@ -8,7 +8,7 @@ This program takes the name of the singer(Iranian signer) and downloads all the 
 
 ## Installation
   
-First, make sure you have Python3 and pip installed. Then go to the program directory and run the following command in the terminall or command line:
+First, make sure you have Python3 and pip and git installed. Then run the following command in the terminall or command line:
 
 ``` bash
 git clone https://github.com/Ali-Hosseinverdi/Music-downloader.git
