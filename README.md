@@ -11,13 +11,15 @@ This program takes the name of the singer(Iranian signer) and downloads all the 
 First, make sure you have Python3 and pip installed. Then go to the program directory and run the following command in the terminall or command line:
 
 ``` bash
-pip3 install requirements.txt
+git clone https://github.com/Ali-Hosseinverdi/Music-downloader.git
+cd Music-downloader
+pip3 install -r requirements.txt
 ```
   
 ## Usage
 
 ``` bash
-python3 music_downloader.py
+python3 music_dl.py
 ```
   
 <div style="text-align: center">
