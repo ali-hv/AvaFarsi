@@ -26,3 +26,7 @@ python3 music_dl.py
     <a href="hhttps://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.gif">
     <img src="https://github.com/Ali-Hosseinverdi/Music-downloader/blob/main/screenshots/1.gif"/></a>
 </div>
+
+# TODO:
+1. Writing gui version
+2. Design android version
