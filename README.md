@@ -28,5 +28,5 @@ python3 music_dl.py
 </div>
 
 # TODO:
-1. Writing gui version
-2. Design android version
+- [ ] gui version
+- [ ] Android version
