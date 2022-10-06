@@ -30,3 +30,4 @@ python3 music_dl.py
 # TODO:
 - [ ] gui version
 - [ ] Android version
+- [ ] remove duplicate musics before download
