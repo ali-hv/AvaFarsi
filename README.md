@@ -3,12 +3,11 @@
 <h2 align="center">AvaFarsi</h2>
 </p>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 ![windows](https://img.shields.io/badge/windows-red?style=flat&logo=windows)
 ![linux](https://img.shields.io/badge/Linux-red?style=flat&logo=linux)
 ![gpl-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)
 ![python](https://img.shields.io/badge/Made%20with-Python%203.8-green.svg?logo=python)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ali-Hosseinverdi/Music-downloader?color=purple)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ali-Hosseinverdi/AvaFarsi?color=purple)
 
 <p align="center"><kbd><img src="https://raw.githubusercontent.com/Ali-Hosseinverdi/Music-downloader/main/screenshots/menu_img.png"></kbd></p>
 
