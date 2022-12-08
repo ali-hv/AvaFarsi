@@ -55,4 +55,10 @@ AvaFarsi doesn't have any host and database of songs for himself and it just cra
 
 ## Contributing
 
+if you can imporve this program with adding a new feature or if you found a bug in this program or even if you have an idea that can make this app better, just send a pull-request or create an issue.
+You can also send me an email:<br>
+[alihv5000@gmail.com](mailto:alihv5000@gmail.com)
+
 ## License
+
+[GPL-3.0](https://github.com/Ali-Hosseinverdi/AvaFarsi/blob/main/LICENSE)
