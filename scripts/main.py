@@ -33,6 +33,7 @@ class Ui_MainWindow(QWidget):
         super().__init__()
         self.window_width, self.window_height = 832, 550
         self.setMinimumSize(self.window_width, self.window_height)
+        self.setGeometry(QtCore.QRect(200,150,832,550))
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setStyleSheet('border-radius: 30px;')
