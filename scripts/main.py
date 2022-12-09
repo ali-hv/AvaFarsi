@@ -455,11 +455,11 @@ class Ui_MainWindow(QWidget):
         self.downloadBar_2.setGeometry(QtCore.QRect(262, 290, 310, 71))
         self.downloadBar_2.setStyleSheet("QProgressBar {\n"
                                           "text-align: center;\n"
-                                          "border-radius: 15px;\n"
+                                          "border-radius: 20px;\n"
                                           "}\n"
                                           "QProgressBar::chunk {\n"
-                                          "border-top-left-radius: 15px;\n"
-                                          "border-bottom-left-radius: 15px;\n"
+                                          "border-top-left-radius: 20px;\n"
+                                          "border-bottom-left-radius: 20px;\n"
                                           "background-color:  rgb(120, 70, 252);}")
         self.downloadBar_2.setValue(0)
         self.downloadBar_2.hide()
