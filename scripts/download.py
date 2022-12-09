@@ -47,7 +47,7 @@ def siner_name_single(self, app):
     if self.select_music_name.currentText() == "- انتخاب موزیک -":
         self.notice_1.setText("لطفا یک آهنگ انتخاب کنید !")
     else:
-        self.downloadBar_1.setGeometry(QtCore.QRect(70, 160, 321, 71))
+        self.downloadBar_1.setGeometry(QtCore.QRect(70, 160, 321, 61))
         self.stop_1.setGeometry(QtCore.QRect(400, 164, 60, 60))
         #self.stop_1.show()
         app.processEvents()
