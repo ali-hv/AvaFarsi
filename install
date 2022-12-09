@@ -1,0 +1,21 @@
+#!/bin/bash
+
+chmod +x avafarsi
+cp avafarsi /usr/bin/
+mkdir /usr/share/avafarsi
+cp -r resources scripts inbox.txt README.md LICENSE /usr/share/avafarsi
+touch /usr/share/applications/avafarsi.desktop
+OUTPUT=$(users | cut -d' ' -f1)
+chown -R "${OUTPUT}" /usr/share/avafarsi
+echo "[Desktop Entry]
+Version=2.0
+Name=avafarsi
+Comment=Download the songs of iranian singers easily
+Exec=/usr/bin/avafarsi
+Icon=/usr/share/avafarsi/resources/ui/widgets_img/app_icon.ico
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Accessories;
+X-Desktop-File-Install-Version=0.15" > /usr/share/applications/avafarsi.desktop
+echo "installed!"

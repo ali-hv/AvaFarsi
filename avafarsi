@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/share/avafarsi/scripts
+python3 main.py
