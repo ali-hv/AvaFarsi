@@ -23,7 +23,6 @@
   + [Windows](#windows)
   + [Linux](#linux)
   + [Other operating systems](#other-operating-systems)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -46,12 +45,26 @@ AvaFarsi doesn't have any host and database of songs for himself and it just cra
 ## Installation
 
 ### Windows
+Just download the setup file from [here](https://github.com/Ali-Hosseinverdi/AvaFarsi/releases) and install the program.
 
 ### Linux
+First of all, make sure you have python3 and pip and git installed. Then open your terminal and enter the following commands in order:
+
+``` bash
+git clone https://github.com/Ali-Hosseinverdi/AvaFarsi.git
+cd AvaFarsi
+pip3 install -r requirements.txt
+chmod +x install
+sudo ./install
+```
+
+Now you can run the AvaFarsi from your apps menu or you can just enter the app name in your terminal:
+```
+avafarsi
+```
 
 ### Other operating systems
-
-## Usage
+On other Unix-based operating systems such as Mac, the installation steps on linux should install the program just fine. But I didn't test it so if it doesn't install properly, create an issue and tell me your OS and some details.
 
 ## Contributing
 
