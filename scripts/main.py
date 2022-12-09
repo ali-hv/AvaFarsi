@@ -76,7 +76,7 @@ class Ui_MainWindow(QWidget):
         self.settings.hide()
 
         self.title = QtWidgets.QLabel(self.menu_page)
-        self.title.setGeometry(QtCore.QRect(308, 30, 199, 51))
+        self.title.setGeometry(QtCore.QRect(271, 30, 199, 51))
         self.Lalezar_font.setPointSize(28)
         self.title.setFont(self.Lalezar_font)
         self.title.setStyleSheet("color: rgb(255, 255, 255);")
