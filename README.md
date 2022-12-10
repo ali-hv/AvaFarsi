@@ -64,7 +64,7 @@ avafarsi
 ```
 
 ### Other operating systems
-On other Unix-based operating systems such as Mac, the installation steps on linux should install the program just fine. But I didn't test it so if it doesn't install properly, create an issue and tell me your OS and some details.
+On other Unix-based operating systems such as Mac, the installation steps on linux should install the program just fine. But I didn't test it so if it didn't install properly, create an issue and tell me your OS and some details.
 
 ## Contributing
 
