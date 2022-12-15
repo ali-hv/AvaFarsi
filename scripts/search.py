@@ -3,6 +3,7 @@ import internet_check
 import os
 from bs4 import BeautifulSoup
 from pathlib import Path
+import re
 
 def singer_name_musicfa_upmusics(self, app):
         if internet_check.check(self):
@@ -63,7 +64,7 @@ def singer_name_musicfa_upmusics(self, app):
                 except:
                     total_links.append([""])
 
-            if self.first_site.isChecked():
+            if self.second_site.isChecked():
                 get_links("https://music-fa.com/artist/", "div", "cntfa")
             else:
                 get_links("https://upmusics.com/tag/", "article", "upsng")
@@ -98,6 +99,54 @@ def singer_name_musicfa_upmusics(self, app):
             self.search_singer_name_btn.setEnabled(1)
         else:
             self.notice_0.setText('لطفا به اینترنت متصل شوید!')
+
+def singer_name_mrtehran(self, app):
+    if internet_check.check(self):
+        self.search_singer_name_btn.setDisabled(1)
+        self.notice_0.setText("در حال جستجو ...")
+        app.processEvents()
+
+        self.singer_name_text = self.get_singer_name.text().strip().replace("ي", "ی")
+        
+        links = open("../resources/musics_db/singers_links(MrTehran).txt", "r").readlines()
+        links = [i.strip().split(',') for i in links]
+        
+        for i in links:
+            if self.singer_name_text == i[0]:
+                url = i[1]
+                found = 1
+                break
+        else:
+            self.notice_0.setText('خواننده مورد نظر یافت نشد !!!')
+            found = 0
+            self.search_singer_name_btn.setEnabled(1)
+            
+        if found:
+            site = requests.get(url)
+            text = site.text
+            bs = BeautifulSoup(text, 'html.parser')
+            
+            music_links = bs.find_all('div', {'class':'col mb-3'})
+            music_links = [re.findall('data-song="(.*\.mp3)"', str(i))[0] for i in music_links if 'data-song="' in str(i)]
+
+            music_names = bs.find_all('a', {'class':'text-truncate'})[0:len(links)]
+            music_names = [i.get_text() for i in music_names]
+            
+            self.select_music_name.addItem("- انتخاب موزیک -")
+            for i in music_names:
+                self.select_music_name.addItem(i)
+
+            self.links_unique = music_links
+            self.links = list(zip(music_links,music_names))
+            
+            self.search_singer_name.hide()
+            self.singer_name.setText(self.singer_name_text)
+            self.number_of_musics.setText(f"تعداد موزیک ها : {len(self.links_unique)}")
+            self.singer_img.setStyleSheet(f"background-image: url(../resources/ui/singers_img/{self.singer_name_text.replace(' ', '-')}.jpg);\n"
+                                                "border-radius: 30px;")
+            self.page_1.show()
+
+            self.search_singer_name_btn.setEnabled(1)
 
 def music_name(self, app):
     if internet_check.check(self):
