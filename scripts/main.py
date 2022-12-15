@@ -183,10 +183,10 @@ class Ui_MainWindow(QWidget):
         self.notice_0.setFont(self.Lalezar_font)
         self.notice_0.setStyleSheet("color: rgb(255, 37, 21);")
         self.notice_0.setAlignment(QtCore.Qt.AlignHCenter)
-
+        
         self.first_site = QtWidgets.QRadioButton(self.search_singer_name)
         self.first_site.setObjectName("first_site")
-        self.first_site.setGeometry(QtCore.QRect(110, 222, 131, 41))
+        self.first_site.setGeometry(QtCore.QRect(110, 188, 131, 41))
         self.Lalezar_font.setPointSize(15)
         self.first_site.setFont(self.Lalezar_font)
         self.first_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -200,11 +200,25 @@ class Ui_MainWindow(QWidget):
         self.first_site.setChecked(True)
 
         self.second_site = QtWidgets.QRadioButton(self.search_singer_name)
-        self.second_site.setObjectName("second_site")
-        self.second_site.setGeometry(QtCore.QRect(110, 255, 141, 31))
+        self.second_site.setObjectName("first_site")
+        self.second_site.setGeometry(QtCore.QRect(110, 222, 131, 41))
+        self.Lalezar_font.setPointSize(15)
         self.second_site.setFont(self.Lalezar_font)
         self.second_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.second_site.setStyleSheet("QRadioButton {\n"
+                                      "color :rgb(165, 165, 165);\n"
+                                      "}\n"
+                                      "QRadioButton::indicator {\n"
+                                      "width: 25px;\n"
+                                      "height: 25px;\n"
+                                      "}")
+
+        self.third_site = QtWidgets.QRadioButton(self.search_singer_name)
+        self.third_site.setObjectName("second_site")
+        self.third_site.setGeometry(QtCore.QRect(110, 255, 141, 31))
+        self.third_site.setFont(self.Lalezar_font)
+        self.third_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.third_site.setStyleSheet("QRadioButton {\n"
                                        "color:  rgb(165, 165, 165);\n"
                                        "}\n"
                                        "QRadioButton::indicator {\n"
@@ -580,8 +594,9 @@ class Ui_MainWindow(QWidget):
         self.multiple_dl_label.setText(_translate("Dialog", "دانلود چندتایی"))
         self.stop_1.setText(_translate("Dialog", "توقف"))
         self.stop_2.setText(_translate("Dialog", "توقف"))
-        self.first_site.setText(_translate("Dialog", "music-fa"))
-        self.second_site.setText(_translate("Dialog", "upmusics"))
+        self.first_site.setText(_translate("Dialog", "MrTehran"))
+        self.second_site.setText(_translate("Dialog", "music-fa"))
+        self.third_site.setText(_translate("Dialog", "upmusics"))
         self.dl_music_name_btn.setText(_translate("Dialog", "دانلود"))
 
 
@@ -616,7 +631,7 @@ class Ui_MainWindow(QWidget):
         self.page_1.close()
         self.menu_page.show()
         self.back.hide()
-        self.first_site.setChecked(1)
+        self.second_site.setChecked(1)
 
     def Handle_Progress(self, blocknum, blocksize, totalsize):
         ## calculate the progress
@@ -640,7 +655,10 @@ class Ui_MainWindow(QWidget):
                                           "border-radius: 15px;")
 
     def search_singer_name_func(self):
-        search.singer_name_musicfa_upmusics(self, app)
+        if self.first_site.isChecked():
+            search.singer_name_mrtehran(self, app)
+        else:
+            search.singer_name_musicfa_upmusics(self, app)
 
     def part_music_clicked_signal(self):
         self.back.setCheckable(1)
