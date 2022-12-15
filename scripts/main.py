@@ -640,7 +640,7 @@ class Ui_MainWindow(QWidget):
                                           "border-radius: 15px;")
 
     def search_singer_name_func(self):
-        search.search_singer_name(self, app)
+        search.singer_name_musicfa_upmusics(self, app)
 
     def part_music_clicked_signal(self):
         self.back.setCheckable(1)
@@ -670,7 +670,7 @@ class Ui_MainWindow(QWidget):
         download.siner_name_single(self, app)
 
     def search_music_name_func(self):
-        search.search_music_name(self, app)
+        search.music_name(self, app)
 
     def dl_music_name_func(self):
         download.music_name(self, app)

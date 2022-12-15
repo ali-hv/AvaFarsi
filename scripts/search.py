@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-def search_singer_name(self, app):
+def singer_name_musicfa_upmusics(self, app):
         if internet_check.check(self):
             self.search_singer_name_btn.setDisabled(1)
             self.notice_0.setText("در حال جستجو ...")
@@ -99,7 +99,7 @@ def search_singer_name(self, app):
         else:
             self.notice_0.setText('لطفا به اینترنت متصل شوید!')
 
-def search_music_name(self, app):
+def music_name(self, app):
     if internet_check.check(self):
         self.select_music.clear()
         self.select_music.addItem("- انتخاب موزیک -")
