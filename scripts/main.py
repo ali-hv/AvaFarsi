@@ -186,7 +186,7 @@ class Ui_MainWindow(QWidget):
         
         self.first_site = QtWidgets.QRadioButton(self.search_singer_name)
         self.first_site.setObjectName("first_site")
-        self.first_site.setGeometry(QtCore.QRect(110, 188, 131, 41))
+        self.first_site.setGeometry(QtCore.QRect(110, 200, 131, 41))
         self.Lalezar_font.setPointSize(15)
         self.first_site.setFont(self.Lalezar_font)
         self.first_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -201,7 +201,7 @@ class Ui_MainWindow(QWidget):
 
         self.second_site = QtWidgets.QRadioButton(self.search_singer_name)
         self.second_site.setObjectName("first_site")
-        self.second_site.setGeometry(QtCore.QRect(110, 222, 131, 41))
+        self.second_site.setGeometry(QtCore.QRect(110, 234, 131, 41))
         self.Lalezar_font.setPointSize(15)
         self.second_site.setFont(self.Lalezar_font)
         self.second_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -215,7 +215,7 @@ class Ui_MainWindow(QWidget):
 
         self.third_site = QtWidgets.QRadioButton(self.search_singer_name)
         self.third_site.setObjectName("second_site")
-        self.third_site.setGeometry(QtCore.QRect(110, 255, 141, 31))
+        self.third_site.setGeometry(QtCore.QRect(110, 272, 141, 31))
         self.third_site.setFont(self.Lalezar_font)
         self.third_site.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.third_site.setStyleSheet("QRadioButton {\n"
