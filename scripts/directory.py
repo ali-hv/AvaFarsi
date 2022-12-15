@@ -5,7 +5,6 @@ from pathlib import Path
 
 def make_dir(self, singer_name):
         self.path = filedialog.askdirectory()
-        print(self.path)
         try: # creating directory for downloading musics in there
             os.mkdir(Path(f'{self.path}/{singer_name}'))
         except FileExistsError:
