@@ -625,8 +625,8 @@ class Ui_MainWindow(QWidget):
         if totalsize > 0:
             download_percentage = readed_data * 100 / totalsize
             #TODO specefiy the progress bar
-            self.downloadBar_1.setValue(download_percentage)
-            self.downloadBar_2.setValue(download_percentage)
+            self.downloadBar_1.setValue(int(download_percentage))
+            self.downloadBar_2.setValue(int(download_percentage))
             app.processEvents()
 
     def live_singer_face(self):
