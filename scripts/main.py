@@ -631,7 +631,7 @@ class Ui_MainWindow(QWidget):
         self.page_1.close()
         self.menu_page.show()
         self.back.hide()
-        self.second_site.setChecked(1)
+        self.first_site.setChecked(1)
 
     def Handle_Progress(self, blocknum, blocksize, totalsize):
         ## calculate the progress
