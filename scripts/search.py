@@ -92,8 +92,12 @@ def singer_name_musicfa_upmusics(self, app):
             self.search_singer_name.hide()
             self.singer_name.setText(self.singer_name_text)
             self.number_of_musics.setText(f"تعداد موزیک ها : {len(self.links)}")
-            self.singer_img.setStyleSheet(f"background-image: url(../resources/ui/singers_img/{self.singer_name_text.replace(' ', '-')}.jpg);\n"
-                                            "border-radius: 30px;")
+            if self.singer_name_text.replace(' ', '-')+'.jpg' in os.listdir('../resources/ui/singers_img/'):
+                self.singer_img.setStyleSheet(f"background-image: url(../resources/ui/singers_img/{self.singer_name_text.replace(' ', '-')}.jpg);\n"
+                                                "border-radius: 30px;")
+            else:
+               self.singer_img.setStyleSheet("background-image: url(../resources/ui/widgets_img/big_unknown_face.png);\n"
+                                             "border-radius: 30px;")
             self.page_1.show()
 
         self.search_singer_name_btn.setEnabled(1)
@@ -149,8 +153,12 @@ def singer_name_mrtehran(self, app):
             self.search_singer_name.hide()
             self.singer_name.setText(self.singer_name_text)
             self.number_of_musics.setText(f"تعداد موزیک ها : {len(self.links_unique)}")
-            self.singer_img.setStyleSheet(f"background-image: url(../resources/ui/singers_img/{self.singer_name_text.replace(' ', '-')}.jpg);\n"
+            if self.singer_name_text.replace(' ', '-')+'.jpg' in os.listdir('../resources/ui/singers_img/'):
+                self.singer_img.setStyleSheet(f"background-image: url(../resources/ui/singers_img/{self.singer_name_text.replace(' ', '-')}.jpg);\n"
                                                 "border-radius: 30px;")
+            else:
+               self.singer_img.setStyleSheet("background-image: url(../resources/ui/widgets_img/big_unknown_face.png);\n"
+                                             "border-radius: 30px;")
             self.page_1.show()
 
             self.search_singer_name_btn.setEnabled(1)
