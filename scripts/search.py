@@ -117,9 +117,16 @@ def singer_name_mrtehran(self, app):
                 found = 1
                 break
         else:
-            self.notice_0.setText('خواننده مورد نظر یافت نشد !!!')
-            found = 0
-            self.search_singer_name_btn.setEnabled(1)
+            for i in links:
+                if self.singer_name_text in i[0]:
+                    url = i[1]
+                    self.singer_name_text = i[0]
+                    found = 1
+                    break
+            else:
+                self.notice_0.setText('خواننده مورد نظر یافت نشد !!!')
+                self.search_singer_name_btn.setEnabled(1)
+                found = 0
             
         if found:
             site = requests.get(url)
