@@ -52,37 +52,43 @@ def siner_name_single(self, app):
         app.processEvents()
 
         music_name = self.select_music_name.currentText()
+        
+        found = 0
         for i in self.links:
             if i[1] == music_name:
                 music_link = i[0]
                 music_name = i[1]
+                found = 1
                 break
 
-        self.disable_enable(1)
-        self.notice_1.setText("در حال دانلود ...")
-        app.processEvents()
-        singer_name = self.singer_name_text
+        if found:
+            self.disable_enable(1)
+            self.notice_1.setText("در حال دانلود ...")
+            app.processEvents()
+            singer_name = self.singer_name_text
 
-        directory.make_dir(self, singer_name)
+            directory.make_dir(self, singer_name)
 
-        music_name = music_name.replace("128", "").replace(")", "").replace("(", "").replace("-", "").strip() + '.mp3'
+            music_name = music_name.replace("128", "").replace(")", "").replace("(", "").replace("-", "").strip() + '.mp3'
 
-        file_path = Path(f"{self.path}/{singer_name}/{music_name}")
+            file_path = Path(f"{self.path}/{singer_name}/{music_name}")
 
-        self.downloadBar_1.show()
-        app.processEvents()
+            self.downloadBar_1.show()
+            app.processEvents()
 
-        urllib.request.urlretrieve(music_link, file_path, self.Handle_Progress)
+            urllib.request.urlretrieve(music_link, file_path, self.Handle_Progress)
 
-        self.notice_1.setText("موزیک دانلود شد")
-        self.stop_1.hide()
-        self.downloadBar_1.hide()
-        self.disable_enable(0)
-        app.processEvents()
+            self.notice_1.setText("موزیک دانلود شد")
+            self.stop_1.hide()
+            self.downloadBar_1.hide()
+            self.disable_enable(0)
+            app.processEvents()
 
-        # opening the download directory
-        path = Path(f'{self.path}/{singer_name}')
-        directory.open_dir(self, path)
+            # opening the download directory
+            path = Path(f'{self.path}/{singer_name}')
+            directory.open_dir(self, path)
+        else:
+            self.notice_1.setText("مشکلی در دانلود این موزیک وجود دارد!")
 
 def music_name(self, app):
     index = self.select_music.currentIndex()
