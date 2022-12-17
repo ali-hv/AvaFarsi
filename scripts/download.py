@@ -14,8 +14,7 @@ def singer_name(self, app, end_of_the_loop):
     for i in range(0,end_of_the_loop): # downloading musics
         try:
             #print(self.links_unique[i])
-            music_name = self.links_unique[i].replace('%7C', '-').replace('|', '-')
-            music_name = ' '.join(music_name.split('-%20')[1].split('%20')[0:-1]) + '.mp3' # getting the name of song
+            music_name = self.links[i][1] + '.mp3'
         except IndexError:
             try:
                 music_name = self.links_unique[i].split('/')[-1]
