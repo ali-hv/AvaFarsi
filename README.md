@@ -13,7 +13,7 @@
 
 <p align="center"><kbd><img src="https://raw.githubusercontent.com/Ali-Hosseinverdi/Music-downloader/main/screenshots/menu_img.png"></kbd></p>
 
-**AvaFarsi** is an open-source graphical app which helps you to find and download the songs of iranian singers easily. This app downloads songs from the [upmusics](https://upmusics.com) and [music-fa](https://music-fa.com) sites.
+**AvaFarsi** is an open-source graphical app which helps you to find and download the songs of iranian singers easily. This app downloads songs from the [MrTehran](https://mrtehran.com) [upmusics](https://upmusics.com) and [music-fa](https://music-fa.com) sites.
 
 ## Table of contents
 
