@@ -75,6 +75,15 @@ class Ui_MainWindow(QWidget):
         self.settings.setStyleSheet("border: 0;\n"
                                     "background-image: url(../resources/ui/widgets_img/settings.png);")
         self.settings.hide()
+        
+        self.version_info = QtWidgets.QLabel(self.menu_page)
+        self.version_info.setObjectName("version_info")
+        self.version_info.setGeometry(QtCore.QRect(10, 508, 50, 12))
+        self.Lalezar_font.setPointSize(13)
+        self.version_info.setFont(self.Lalezar_font)
+        self.version_info.setStyleSheet("background-color: rgb();\n"
+                                        "color: gray;")
+        self.version_info.setText("v2.0.0")
 
         self.title = QtWidgets.QLabel(self.menu_page)
         self.title.setGeometry(QtCore.QRect(271, 30, 199, 51))
