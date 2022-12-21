@@ -55,7 +55,7 @@ class Ui_MainWindow(QWidget):
             self.inbox.setStyleSheet("border: 0;\n"
                                      "background-image: url(../resources/ui/widgets_img/inbox.png);")
 
-        self.inbox_message = QtWidgets.QPlainTextEdit(self)
+        self.inbox_message = QtWidgets.QPlainTextEdit(self.menu_page)
         self.inbox_message.setObjectName("inbox_message")
         self.inbox_message.setEnabled(False)
         self.inbox_message.setGeometry(QtCore.QRect(7, 42, 221, 261))
