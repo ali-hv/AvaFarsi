@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 #global libs
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
-from PyQt5.QtWidgets import QPushButton, QApplication, QWidget
+from PyQt5 import QtCore, QtGui, uic
+from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtCore import Qt, QPoint
 import os
 import sys
