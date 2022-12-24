@@ -36,7 +36,6 @@ def singer_name(self, app, end_of_the_loop):
 
     self.notice_1.setText("موزیک ها با موفقیت دانلود شدند :)")
     self.downloadBar_1.hide()
-    self.stop_1.hide()
     self.disable_enable(0)
 
     path = Path(f'{self.path}/{singer_name}')
@@ -47,8 +46,6 @@ def siner_name_single(self, app):
         self.notice_1.setText("لطفا یک آهنگ انتخاب کنید !")
     else:
         self.downloadBar_1.setGeometry(QtCore.QRect(70, 160, 321, 61))
-        self.stop_1.setGeometry(QtCore.QRect(400, 164, 60, 60))
-        #self.stop_1.show()
         app.processEvents()
 
         music_name = self.select_music_name.currentText()
@@ -79,7 +76,6 @@ def siner_name_single(self, app):
             urllib.request.urlretrieve(music_link, file_path, self.Handle_Progress)
 
             self.notice_1.setText("موزیک دانلود شد")
-            self.stop_1.hide()
             self.downloadBar_1.hide()
             self.disable_enable(0)
             app.processEvents()
@@ -100,7 +96,6 @@ def music_name(self, app):
         music_name, singer_name = music_name.strip(), singer_name.strip()
 
         self.downloadBar_2.show()
-        # self.stop_2.show()
         self.notice_2.setText('در حال دانلود ...')
         app.processEvents()
 
@@ -119,4 +114,3 @@ def music_name(self, app):
         self.music_name.clear()
         self.select_music.clear()
         self.downloadBar_2.hide()
-        self.stop_2.hide()
