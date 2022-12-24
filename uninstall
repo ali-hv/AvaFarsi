@@ -3,3 +3,5 @@
 sudo rm -r /usr/share/avafarsi/
 sudo rm /usr/bin/avafarsi
 sudo rm /usr/share/applications/avafarsi.desktop
+
+echo "uninstalled!"
