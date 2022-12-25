@@ -142,13 +142,13 @@ def singer_name_mrtehran(self, app):
 
             music_names = bs.find_all('a', {'class':'text-truncate'})[0:len(links)]
             music_names = [i.get_text() for i in music_names]
-            
-            self.select_music_name.addItem("- انتخاب موزیک -")
-            for i in music_names:
-                self.select_music_name.addItem(i)
 
             self.links_unique = music_links
             self.links = list(zip(music_links,music_names))
+            
+            self.select_music_name.addItem("- انتخاب موزیک -")
+            for i in range(len(self.links_unique)):
+                self.select_music_name.addItem(music_names[i])
             
             self.search_singer_name.hide()
             self.singer_name.setText(self.singer_name_text)
