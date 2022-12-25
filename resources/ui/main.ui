@@ -40,7 +40,7 @@
                         border-bottom-left-radius: 20px;
                         background-color:  rgb(120, 70, 252);}
                        QLineEdit {
-                        color: white;
+                        color: gray;
                         border-radius: 20px;
                         border: 2px solid rgb(130, 130, 130);}
    </string>
