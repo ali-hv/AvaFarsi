@@ -197,12 +197,6 @@
       <width>310</width><height>50</height>
      </rect>
     </property>
-    <property name="styleSheet">
-    <string notr="true">color: white;
-                        border-radius: 20px;
-                        border: 2px solid rgb(130, 130, 130);
-    </string>
-    </property>
     <property name="font"><font><pointsize>16</pointsize></font></property>
     <property name="placeholderText"><string>   نام خواننده را اینجا بنویسید</string></property>
     </widget>
