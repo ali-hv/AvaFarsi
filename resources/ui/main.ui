@@ -19,7 +19,9 @@
                                                           stop: 0.6 #404040, stop:1 #505050);
                         border-radius: 30px;}
                        QPushButton{
-                        background-color: rgb(120, 70, 252);
+                        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                                          stop:0 #8546fc, stop: 0.5 #7846fc,
+                                                          stop: 0.6 #7146fc, stop:1 #6446fc);
                         color: white;
                         border-radius: 35px;}
                        QPushButton:hover{
