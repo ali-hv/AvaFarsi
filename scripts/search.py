@@ -162,6 +162,8 @@ def singer_name_mrtehran(self, app):
             self.page_1.show()
 
             self.search_singer_name_btn.setEnabled(1)
+    else:
+        self.notice_0.setText('لطفا به اینترنت متصل شوید!')
 
 def music_name(self, app):
     if internet_check.check(self):
