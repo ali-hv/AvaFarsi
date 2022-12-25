@@ -14,7 +14,9 @@
   <property name="attribute"><set>Qt::WA_TranslucentBackground</set></property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-                        background-color: rgb(65, 65, 65);
+                        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                                          stop:0 #303030, stop: 0.5 #404040,
+                                                          stop: 0.6 #404040, stop:1 #505050);
                         border-radius: 30px;}
                        QPushButton{
                         background-color: rgb(120, 70, 252);
@@ -42,6 +44,8 @@
                        QLineEdit {
                         border-radius: 20px;
                         border: 2px solid rgb(130, 130, 130);}
+                       QLabel {background-color: rgb()}
+                       QRadioButton {background-color: rgb()}
    </string>
   </property>
 
@@ -125,7 +129,7 @@
     <property name="FrameShape"><set>QFrame::HLine</set></property>
     <property name="FrameShadow"><set>QFrame::Sunken</set></property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(90, 90, 90);</string>
+     <string notr="true">background-color: rgb(60, 60, 60);</string>
     </property>
     </widget>
 
@@ -562,12 +566,12 @@
     <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
     <property name="styleSheet">
     <string notr="true">QPushButton{
-                         border-radius: 10px;
+                         border-radius: 15px;
                          background-color: rgb(20, 98, 252);
                          color: white;
                          background-image: url(../resources/ui/widgets_img/purple_back.PNG);}
                         QPushButton:hover{
-                         border-radius: 30px;
+                         border-radius: 15px;
                          background-color: rgb(20, 98, 252);
                          color: white;
                          background-image: url(../resources/ui/widgets_img/blue_back.PNG);}
