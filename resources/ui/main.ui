@@ -566,17 +566,10 @@
      </rect>
     </property>
     <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+    <property name="font"><font><pointsize>15</pointsize></font></property>
+    <property name="text"><string>بازگشت</string></property>
     <property name="styleSheet">
-    <string notr="true">QPushButton{
-                         border-radius: 15px;
-                         background-color: rgb(20, 98, 252);
-                         color: white;
-                         background-image: url(../resources/ui/widgets_img/purple_back.PNG);}
-                        QPushButton:hover{
-                         border-radius: 15px;
-                         background-color: rgb(20, 98, 252);
-                         color: white;
-                         background-image: url(../resources/ui/widgets_img/blue_back.PNG);}
+    <string notr="true">border-radius: 10px;
     </string>
     </property>
     <property name="visible"><bool>false</bool></property>
