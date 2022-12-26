@@ -102,7 +102,7 @@
      <string notr="true">background-color: rgb();
                          color: gray;</string>
     </property>
-    <property name="text"><string>v2.0.0</string></property>
+    <property name="text"><string>v2.1.1</string></property>
     </widget>
 
     <widget class="QLabel" name="title">
