@@ -569,7 +569,7 @@
     <property name="font"><font><pointsize>15</pointsize></font></property>
     <property name="text"><string>بازگشت</string></property>
     <property name="styleSheet">
-    <string notr="true">border-radius: 10px;
+    <string notr="true">border-radius: 15px;
     </string>
     </property>
     <property name="visible"><bool>false</bool></property>
