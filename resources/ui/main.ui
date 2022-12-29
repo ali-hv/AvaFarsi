@@ -14,7 +14,7 @@
   <property name="attribute"><set>Qt::WA_TranslucentBackground</set></property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-                        background-color: rgb(85, 85, 85);
+                        background-color: rgb(75, 75, 75);
                         border-radius: 30px;}
                        QPushButton{
                         background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
