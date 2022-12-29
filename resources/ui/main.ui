@@ -205,7 +205,7 @@
     <property name="placeholderText"><string>   نام خواننده را اینجا بنویسید</string></property>
     </widget>
 
-    <widget class="QPushButton" name="live_face">
+    <widget class="QWidget" name="live_face">
     <property name="geometry">
      <rect>
       <x>580</x><y>229</y>
