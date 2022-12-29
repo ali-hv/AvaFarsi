@@ -111,8 +111,8 @@ def singer_name_mrtehran(self, app):
         app.processEvents()
 
         self.singer_name_text = self.get_singer_name.text().strip().replace("ي", "ی")
-        
-        links = open("../resources/musics_db/singers_links(MrTehran).txt", "r").readlines()
+        path = Path("../resources/musics_db/singers_links(MrTehran).txt") 
+        links = open(path, "r").readlines()
         links = [i.strip().split(',') for i in links]
         
         for i in links:
