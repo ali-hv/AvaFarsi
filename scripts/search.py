@@ -112,7 +112,7 @@ def singer_name_mrtehran(self, app):
 
         self.singer_name_text = self.get_singer_name.text().strip().replace("ي", "ی")
         path = Path("../resources/musics_db/singers_links(MrTehran).txt") 
-        links = open(path, "r").readlines()
+        links = open(path, "r", encoding='utf-8', errors='ignore').readlines()
         links = [i.strip().split(',') for i in links]
         
         for i in links:
