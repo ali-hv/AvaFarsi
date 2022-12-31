@@ -466,6 +466,7 @@
       <width>0</width><height>0</height>
      </rect>
     </property>
+    <property name="font"><font><pointsize>13</pointsize></font></property>
     </widget>
    </widget>
    #END Download with Singer Name(page1)
@@ -551,6 +552,7 @@
       <width>310</width><height>71</height>
      </rect>
     </property>
+    <property name="font"><font><pointsize>13</pointsize></font></property>
     <property name="visible"><bool>false</bool></property>
     </widget>
    </widget>
