@@ -45,7 +45,7 @@ AvaFarsi doesn't have any host and database of songs for himself and it just cra
 ## Installation
 
 ### Windows
-Just download the setup file from [here](https://github.com/Ali-Hosseinverdi/AvaFarsi/releases/download/2.0.0/AvaFarsi-2.0.0.exe) and install the program.
+Just download the setup file from [here](https://github.com/Ali-Hosseinverdi/AvaFarsi/releases/download/2.1.1/AvaFarsi-2.1.1.exe) and install the program.
 
 ### Linux
 First of all, make sure you have python3 and pip and git installed. Then open your terminal and enter the following commands in order:
