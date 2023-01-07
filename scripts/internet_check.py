@@ -14,6 +14,8 @@ def check(self):
             return False
         except TimeoutError:
             return False
+        except:
+            return False
     except socket.timeout:
         try:
             urllib.request.urlopen('https://music-fa.com', timeout=20)
